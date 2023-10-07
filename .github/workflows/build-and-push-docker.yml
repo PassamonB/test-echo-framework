@@ -8,7 +8,7 @@ on:
 env:
   GO_VERSION: '1.19'
 jobs:
-  White Box Testing:
+  white-box-testing:
     runs-on: ubuntu-latest
     steps:
       -
@@ -22,7 +22,7 @@ jobs:
         run: go get .
       - name: Test with Go
         run: make test
-  Build and Push Docker:
+  docker:
     runs-on: ubuntu-latest
     steps:
       -
