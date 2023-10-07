@@ -1,3 +1,5 @@
+debug:
+	echo 'Make is OK'
 # for dev
 run-dev:
 	go build

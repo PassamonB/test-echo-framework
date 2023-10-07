@@ -6,6 +6,15 @@ on:
       - 'main'
 
 jobs:
+  white-box-testing:
+    runs-on: ubuntu-latest
+    steps:
+      -
+        name: Checkout code from main branch
+        uses: actions/checkout@main
+      - name: Run unit test
+        run: |
+          make debug
   docker:
     runs-on: ubuntu-latest
     steps:
