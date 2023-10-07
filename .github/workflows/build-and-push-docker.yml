@@ -9,6 +9,8 @@ jobs:
   white-box-testing:
     name: White Box Testing
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: true
     steps:
       -
         name: Checkout code from main branch

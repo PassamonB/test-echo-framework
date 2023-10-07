@@ -23,7 +23,7 @@ func TestGetUsers(t *testing.T) {
 	h.getUsers(context)
 
 	// Assertions
-	expectedResult := `[{"name":"test user name","email":"email@test.com"}]`
+	expectedResult := `[{"name":"test user name","email":"email@test.coms"}]`
 	assert.Equal(t, http.StatusOK, response.Code)
 	assert.Equal(t, expectedResult, strings.TrimSuffix(response.Body.String(), "\n"))
 }
